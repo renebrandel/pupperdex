@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nanum Brush Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.subtitle {
+  font-size: 24px;
+}
+
+.mb-s {
+  margin-bottom: 32px;
+}
+
+.Pupperdex {
+  border: 1px solid black;
+  background: #FFF8E4;
+  border-radius: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  text-align: left;
+  max-width: 1028px;
+  min-width: 800px;
+  width: 80%;
+  max-height: calc(100vh - 150px);
+}
+
+.separator {
+  box-shadow: 0 0 55px 5px rgba(0,0,0,0.50);
+  border: 1px solid #ACACAC;
+}
+
+.BreedPage {
+  display: flex;
+  padding: 20px;
+  flex: 1;
+  flex-direction: column;
+}
+
+.breed-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+.DogPage {
+  display: flex;
+  padding: 20px;
+  flex: 1;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  overflow: auto;
+}
+
+.sketched {
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius:15px 255px;
+}
+
+.line {
+  width: 100%;
+  height: 4px;
+  border: 1px solid black;
+}
+
+.BreedButton {
+  border: 1px solid black;
+  margin: 10px;
+  flex-basis: calc(100%/3 - 20px);;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: .25s ease all;
+  min-height: 100px;
+}
+
+.dotted {
+  border-style: dashed;
+}
+
+.BreedButton:hover {
+  cursor: pointer;
+  background: white;
+}
+
+.sketched:hover {
+  border-top-right-radius: 255px 15px;
+  border-top-left-radius: 15px 225px;
+  border-bottom-left-radius: 225px 15px;
+  border-bottom-right-radius:15px 255px;
+}
+
+.upload-btn {
+  transition: .25s ease all;
+  border: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+}
+
+.upload-btn:hover {
+  background: black;
+  color: white;
+}
+
+.puppy-photo {
+  flex: 1;
+  border: 1px solid black;
+  margin: 40px;
+  max-width: calc(100% - 40px);
+}
+
+.centered {
+  align-self: center;
+  text-align: center;
+}
+
+.DogDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.NewDog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  height: 100%;
+}
+
+input {
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 24px;
+  padding: 10px;
+  transition: all .5s ease;;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: white;
+}
+
+.refresh-link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+}
